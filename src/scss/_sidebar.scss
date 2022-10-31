@@ -1,0 +1,97 @@
+.sidebar {
+    width: 10rem;
+    height: 100%;
+    font-size: 14px;
+    left: -2rem;
+    position: fixed;
+    transition: all .5s;
+    display: block;
+    transform: translateX(0);
+    background-color: $color-primary-1;
+
+    &-active {
+        padding-top: 6rem;
+        width: 17%;
+        height: 100vh;
+        font-size: 14px;
+        left: -18rem;
+        position: fixed;
+        display: block;
+        background-color: $color-primary-1;
+        transition: all .5s;
+        transform: translateX(18rem);
+        color: $color-white;
+    }
+
+    &__menu-element {
+        margin: 0 2rem;
+        display: flex;
+        justify-content: flex-start;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        align-items: center;
+        color: $color-white;
+
+        span {
+            color: $color-white;
+        }
+
+        &:first-child {
+            margin-top: 2rem;
+        }
+    }
+
+    &__underline {
+        border-bottom: 1px solid $color-grey-dark-1;
+        margin: 0.5rem 2rem;
+        // border-bottom: 1px solid transparent;
+    }
+
+    &__menu-icon {
+        transform: scale(1.6);
+        margin-right: 3rem;
+        color: $color-white;
+
+        &-user {
+            margin-left: 1.5rem;
+            transform: scale(2);
+            color: $color-white;
+        }
+    }
+
+    &__menu-text {
+        padding: 1rem 3rem;
+    }
+
+    &__menu-small {
+        // padding-top: 8rem;
+        // position: relative;
+        margin-left: 2rem;
+        margin-top: 6rem;
+        color: $color-white;
+        display: flex;
+        flex-direction: column;
+
+        &-element {
+            // margin: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 2rem;
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            color: $color-white;
+        }
+
+        &-icon {
+            scale: 2;
+        }
+
+        span {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+    }
+
+}

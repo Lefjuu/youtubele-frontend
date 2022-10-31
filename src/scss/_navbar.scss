@@ -1,0 +1,76 @@
+.navbar {
+    width: 100%;
+    height: 4rem;
+    padding: 3rem;
+    background-color: $color-primary-1;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    // display: grid;
+    // // grid-template-columns: ;
+    z-index: 100;
+
+    &__menu {
+        color: $color-white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &-icon {
+            transform: scale(2);
+            margin-right: 2rem;
+        }
+    }
+
+
+
+
+    &__search {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        border: 1px solid $color-grey-dark-1;
+        // background-color: $color-black;
+        align-items: center;
+        justify-content: space-between;
+
+
+        &-input {
+            border: none;
+            background-color: transparent;
+            outline: none;
+            padding: 0.8rem;
+            color: $color-grey-light-1;
+        }
+
+        &-btn {
+            background-color: $color-grey-dark-1;
+            padding: 1rem;
+            color: $color-white;
+            cursor: pointer;
+            width: 5rem;
+        }
+    }
+
+    &__icons {
+
+        display: flex;
+        align-items: center;
+        color: $color-white;
+        justify-content: space-between;
+        cursor: pointer;
+
+        &-icon {
+            margin-right: 5rem;
+            transform: scale(2);
+            color: $color-white;
+
+            &-user {
+                margin-left: 1.5rem;
+                transform: scale(2);
+                color: $color-white;
+            }
+        }
+    }
+}

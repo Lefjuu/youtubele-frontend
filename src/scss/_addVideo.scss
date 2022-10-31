@@ -1,0 +1,75 @@
+.addVideo {
+    padding-top: 9rem;
+    padding-left: 9rem;
+
+    font-size: 2rem;
+    gap: 4rem 0rem;
+    float: right;
+    width: 99%;
+    background-color: $color-primary-2;
+    height: 100vh;
+    transition: .5s;
+    // &__container {
+    //     display: grid;
+    //     // grid-template-columns: repeat(2, 1fr);
+    //     grid-template-rows: repeat(auto-fit, minmax(40rem, 1fr));
+    //     grid-gap: 6rem;
+    // }
+
+    &__form {
+        margin: auto;
+        width: 60%;
+        height: 30rem;
+
+
+        &-title {
+            color: $color-white;
+            font-weight: 700;
+        }
+
+
+        &-input {
+            height: 4rem;
+            width: 24rem;
+            margin-bottom: 4rem;
+            background-color: $color-primary-2;
+            color: $color-white;
+            font-size: 2rem;
+
+            &-desc {
+                height: 10rem;
+                width: 100%;
+                background-color: $color-primary-2;
+                color: $color-white;
+                font-size: 2rem;
+                font-family: $font-primary;
+            }
+        }
+
+        &-thumbnail {
+            object-fit: cover;
+        }
+
+        &-video {
+            object-fit: cover;
+        }
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            border: 1px solid $color-primary-1;
+
+            &:nth-child(2) {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+                align-items: center;
+            }
+
+            // span {
+            //     color: $color-white;
+            //     font-weight: 700;
+            // }
+        }
+    }
+}

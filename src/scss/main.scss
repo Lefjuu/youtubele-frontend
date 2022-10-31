@@ -1,0 +1,29 @@
+@import "./Variables.scss";
+@import "./Navbar.scss";
+@import "./Sidebar";
+@import "./cards";
+@import "./logincard";
+@import './profile';
+@import "./video";
+@import "./addVideo";
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+    background-color: $color-primary-2;
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 300;
+    line-height: 1.6;
+}

@@ -1,0 +1,95 @@
+.profile {
+    padding-top: 9rem;
+    padding-left: 9rem;
+
+    font-size: 2rem;
+    gap: 4rem 0rem;
+    float: right;
+    width: 99%;
+    background-color: $color-primary-2;
+    height: 100vh;
+    transition: .5s;
+
+    // padding: 10rem 40rem;
+
+    &__title {
+        padding: 2rem;
+        color: $color-white;
+    }
+
+    &__form {
+        margin: auto;
+        width: 60%;
+        height: 30rem;
+
+
+        &-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+            grid-gap: 4rem;
+
+        }
+
+        &-input {
+            height: 4rem;
+            width: 24rem;
+            margin-bottom: 4rem;
+            background-color: $color-primary-2;
+            color: $color-white;
+            font-size: 2rem;
+        }
+
+        &-card {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+
+            // margin: 2rem;
+            // background-color: aqua;
+            border: 1px solid $color-primary-1;
+
+            &:nth-child(2) {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+                align-items: center;
+
+            }
+
+            span {
+                color: $color-white;
+                font-weight: 700;
+            }
+        }
+
+        &-img {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        &-button-container {
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        &-button {
+            padding: 1rem 3rem;
+            background-color: red;
+            color: $color-white;
+            cursor: pointer;
+        }
+
+        &-small-text {
+            font-size: 1rem;
+        }
+    }
+}
+
+
+.sb-active {
+
+    // float: right;
+    width: 87%;
+    float: right;
+    transition: all .5s;
+}

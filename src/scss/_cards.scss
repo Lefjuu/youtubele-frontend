@@ -1,0 +1,70 @@
+.cards {
+    padding-top: 9rem;
+    padding-left: 9rem;
+    // padding-right: 3rem;
+    display: grid;
+    // width: auto;
+    // grid-column: center-start / center-end;
+
+    // nie wiem czy to nie zmienienia
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 4rem 0rem;
+    transition: .5s;
+    float: right;
+    width: 99%;
+    background-color: $color-primary-2;
+}
+
+.sb-active {
+
+    // float: right;
+    width: 87%;
+    float: right;
+    transition: all .5s;
+}
+
+.card {
+    color: $color-white;
+
+    &__img {
+        width: 90%;
+        height: 26rem;
+        object-fit: contain;
+        background-color: #0d0d0d;
+    }
+
+    &__details {
+        margin-top: 1rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: row;
+
+        &-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        &-icon {
+            margin-top: .6rem;
+            margin-right: 0.5rem;
+            padding: .2rem;
+            transform: scale(4);
+            color: $color-white;
+        }
+
+        &-channel {
+            font-size: 1.4rem;
+
+            &-img {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        &-info {
+            font-size: 14px;
+        }
+    }
+}
